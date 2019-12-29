@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Cart from './Cart/Cart'
+import Customize from './Customize/Customize'
 
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
@@ -101,11 +103,17 @@ class App extends Component {
           <h1>ELF Computing | Laptops</h1>
         </header>
         <main>
-          <form className="main__form">
+          <Customize 
+          features={features}/>
+          {/* <form className="main__form">
             <h2>Customize your laptop</h2>
             {features}
-          </form>
-          <section className="main__summary">
+          </form> */}
+          <Cart
+          summary={summary}
+          USCurrencyFormat={USCurrencyFormat}
+          total={total} />
+          {/* <section className="main__summary">
             <h2>Your cart</h2>
             {summary}
             <div className="summary__total">
@@ -114,7 +122,7 @@ class App extends Component {
                 {USCurrencyFormat.format(total)}
               </div>
             </div>
-          </section>
+          </section> */}
         </main>
       </div>
     );
