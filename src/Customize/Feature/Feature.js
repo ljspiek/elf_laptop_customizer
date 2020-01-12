@@ -28,7 +28,7 @@ class Feature extends Component {
        
 
         return(
-            <fieldset className="this.props.feature">
+            <fieldset className="feature">
                 <legend className="feature__name">
                     <h3>{this.props.feature}</h3>
                 </legend>
