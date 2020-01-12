@@ -5,7 +5,7 @@ import FeatureItem from '../FeatureItem/FeatureItem'
 class Feature extends Component {
     render() {
        
-        console.log(this.props)
+        // console.log(this.props)
 
         const featureItems = this.props.options.map(item => {
             const itemHash = slugify(JSON.stringify(item))

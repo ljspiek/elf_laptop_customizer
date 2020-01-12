@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Feature from './Feature/Feature';
-import slugify from 'slugify';
+// import slugify from 'slugify';
 
 
 class Customize extends Component {
     render() {
-        console.log(this.props)
+        // console.log(this.props)
 
 
         const features=Object.keys(this.props.features).map((feature, idx) => {
