@@ -104,7 +104,10 @@ class App extends Component {
         </header>
         <main>
           <Customize 
-          features={features}/>
+          features={this.props.features}
+          selected={this.state.selected}
+          onUpdateFeature={this.updateFeature}
+          USCurrencyFormat={USCurrencyFormat}/>
           {/* <form className="main__form">
             <h2>Customize your laptop</h2>
             {features}
